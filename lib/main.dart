@@ -10,6 +10,14 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: Scaffold(body: ExpensesApp()));
+    return MaterialApp(
+      home: Scaffold(
+        body: ExpensesApp(),
+        // appBar: AppBar(
+        //  title: Text("Expense Tracker"),
+        // actions: [IconButton(onPressed: ExpensesApp.openAddExpenseOverlay, icon: Icon(Icons.add))],
+      ),
+    );
+    // );
   }
 }
